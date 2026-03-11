@@ -1,0 +1,162 @@
+average_wages:
+  agriculture: 45000
+  energy: 95000
+  forestry: 52000
+  manufacturing: 72000
+  minerals: 75000
+  other: 58000
+  source: BLS QCEW, 2023
+consumption_multiplier:
+  notes: MPC=0.8 * wage_share=0.55 * local_spending=0.75
+  source: BEA, 2023
+  value: 0.65
+did_config:
+  tariff:
+    cluster_var: state
+    control_states: []
+    policy_year: 2025
+    post_periods:
+    - '2025'
+    pre_periods:
+    - '2022'
+    - '2023'
+    - '2024'
+    treatment_states:
+    - WA
+    - OR
+    - ID
+    - MT
+    - AK
+  usmca:
+    cluster_var: state
+    control_states:
+    - MT
+    - ID
+    - AK
+    excluded_years:
+    - '2020'
+    - '2021'
+    policy_year: 2020
+    post_periods:
+    - '2022'
+    - '2023'
+    - '2024'
+    pre_periods:
+    - '2017'
+    - '2018'
+    - '2019'
+    treatment_states:
+    - WA
+    - OR
+economic_multipliers:
+  agriculture: 2.5
+  energy: 2.2
+  forestry: 2.4
+  manufacturing: 2.8
+  minerals: 2.3
+  notes: Type II multipliers including induced effects
+  other: 2.5
+  source: BEA RIMS II (stylized)
+elasticity:
+  agriculture:
+    notes: Short-run export demand elasticity
+    source: USITC, 2019
+    value: -0.8
+  energy:
+    notes: Inelastic due to infrastructure lock-in
+    source: EIA, 2020
+    value: -0.3
+  forestry:
+    notes: Moderate elasticity
+    source: USITC, 2019
+    value: -1.0
+  manufacturing:
+    notes: Higher substitutability
+    source: Amiti et al., 2019
+    value: -1.5
+  minerals:
+    notes: Commodity markets
+    source: World Bank, 2021
+    value: -0.5
+  other:
+    notes: Default elasticity
+    source: Assumed
+    value: -1.0
+employment_multipliers:
+  agriculture:
+    direct: 8.5
+    total: 12.0
+  energy:
+    direct: 3.2
+    total: 5.5
+  forestry:
+    direct: 6.0
+    total: 9.0
+  manufacturing:
+    direct: 5.2
+    total: 8.5
+  minerals:
+    direct: 4.0
+    total: 7.0
+  other:
+    direct: 5.0
+    total: 8.0
+  source: BLS, BEA RIMS II (stylized)
+io_coefficients:
+  linkage_matrix:
+    agriculture:
+      energy: 0.1
+      manufacturing: 0.15
+      other: 0.08
+    energy:
+      manufacturing: 0.12
+      minerals: 0.08
+      other: 0.05
+    forestry:
+      energy: 0.08
+      manufacturing: 0.1
+      other: 0.05
+    manufacturing:
+      agriculture: 0.08
+      energy: 0.15
+      forestry: 0.05
+      manufacturing: 0.25
+      minerals: 0.2
+      other: 0.1
+    minerals:
+      energy: 0.2
+      manufacturing: 0.15
+      other: 0.05
+  notes: Actual RIMS II requires purchase; these are illustrative
+  source: BEA RIMS II, 2022 (stylized)
+metadata:
+  currency: USD
+  data_source: U.S. Census Bureau API
+  inflation_adjusted: false
+  last_updated: 2026-02
+  price_basis: nominal
+passthrough:
+  agriculture:
+    notes: High passthrough for commodities
+    source: Fajgelbaum et al., 2020
+    value: 0.85
+  energy:
+    notes: Partial absorption by buyers
+    source: EIA estimates
+    value: 0.6
+  forestry:
+    notes: Similar to agriculture
+    source: USITC, 2019
+    value: 0.8
+  manufacturing:
+    notes: Near-complete passthrough
+    source: Amiti et al., 2019
+    value: 0.9
+  minerals:
+    notes: Commodity pricing
+    source: World Bank
+    value: 0.75
+  other:
+    notes: Default passthrough
+    source: Assumed
+    value: 0.8

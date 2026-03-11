@@ -1,0 +1,1261 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "US national trade with USMCA and control countries",
+    "source": "U.S. Census Bureau API",
+    "generated_at": "2026-02-12T00:02:18.030673",
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "notes": [
+      "用于层1 DID分析",
+      "Treatment: CA, MX (USMCA)",
+      "Control: JP, KR, UK, DE (稳定可比大经济体)",
+      "排除CN (贸易战干扰)",
+      "Post期建议从2021开始 (剔除2020过渡年)"
+    ]
+  },
+  "analysis_design": {
+    "treatment": [
+      "CA",
+      "MX"
+    ],
+    "control": [
+      "JP",
+      "KR",
+      "UK",
+      "DE"
+    ],
+    "pre_period": "2017-2019",
+    "post_period": "2021-2025 (recommended)",
+    "transition_year": 2020
+  },
+  "industries": {
+    "agriculture": "HS 01-24",
+    "energy": "HS 27",
+    "forestry": "HS 44-49",
+    "minerals": "HS 26, 72-76",
+    "manufacturing": "HS 84-90",
+    "other": "others"
+  },
+  "national_trade": {
+    "CA": {
+      "name": "Canada",
+      "group": "usmca",
+      "years": {
+        "2017": {
+          "exports": 282773829896,
+          "imports": 299065421162,
+          "total_trade": 581839251058,
+          "balance": -16291591266,
+          "exports_by_industry": {
+            "other": 72110364573,
+            "agriculture": 26056135182,
+            "minerals": 17169192172,
+            "energy": 19934684936,
+            "forestry": 9392403779,
+            "manufacturing": 138111049254
+          },
+          "imports_by_industry": {
+            "minerals": 21435677220,
+            "other": 66364776594,
+            "forestry": 18581792791,
+            "manufacturing": 93908850048,
+            "agriculture": 25999286169,
+            "energy": 72775038340
+          }
+        },
+        "2018": {
+          "exports": 299731711825,
+          "imports": 318574772746,
+          "total_trade": 618306484571,
+          "balance": -18843060921,
+          "exports_by_industry": {
+            "other": 75078418803,
+            "manufacturing": 143753833438,
+            "minerals": 17849612712,
+            "agriculture": 26666310097,
+            "energy": 26841905759,
+            "forestry": 9541631016
+          },
+          "imports_by_industry": {
+            "agriculture": 26804178689,
+            "other": 71140779465,
+            "manufacturing": 94236215949,
+            "minerals": 22449088221,
+            "forestry": 19192270416,
+            "energy": 84752240006
+          }
+        },
+        "2019": {
+          "exports": 292820257565,
+          "imports": 318588767408,
+          "total_trade": 611409024973,
+          "balance": -25768509843,
+          "exports_by_industry": {
+            "other": 74225196192,
+            "manufacturing": 142441153092,
+            "minerals": 15677314857,
+            "agriculture": 26449085666,
+            "energy": 24725907098,
+            "forestry": 9301600660
+          },
+          "imports_by_industry": {
+            "agriculture": 27601067327,
+            "manufacturing": 95421856019,
+            "minerals": 19616605776,
+            "other": 73719286359,
+            "forestry": 16760243876,
+            "energy": 85469708051
+          }
+        },
+        "2020": {
+          "exports": 256212256538,
+          "imports": 270025523613,
+          "total_trade": 526237780151,
+          "balance": -13813267075,
+          "exports_by_industry": {
+            "agriculture": 26108704313,
+            "other": 75087080677,
+            "minerals": 13956485818,
+            "energy": 16468110582,
+            "forestry": 8737336499,
+            "manufacturing": 115854538649
+          },
+          "imports_by_industry": {
+            "other": 69893675485,
+            "manufacturing": 76365204877,
+            "minerals": 18482950337,
+            "forestry": 18386712697,
+            "energy": 58762101867,
+            "agriculture": 28134878350
+          }
+        },
+        "2021": {
+          "exports": 309604001291,
+          "imports": 357274663444,
+          "total_trade": 666878664735,
+          "balance": -47670662153,
+          "exports_by_industry": {
+            "other": 94117676220,
+            "manufacturing": 133158012864,
+            "agriculture": 29892202629,
+            "minerals": 19282092203,
+            "energy": 22920646784,
+            "forestry": 10233370591
+          },
+          "imports_by_industry": {
+            "other": 81448154962,
+            "forestry": 27587569753,
+            "agriculture": 35930620884,
+            "minerals": 30211431365,
+            "energy": 103703330041,
+            "manufacturing": 78393556439
+          }
+        },
+        "2022": {
+          "exports": 359084152609,
+          "imports": 437417589559,
+          "total_trade": 796501742168,
+          "balance": -78333436950,
+          "exports_by_industry": {
+            "agriculture": 33358700156,
+            "other": 101267601325,
+            "minerals": 21955725541,
+            "forestry": 11321391613,
+            "manufacturing": 155820895605,
+            "energy": 35359838369
+          },
+          "imports_by_industry": {
+            "other": 87184527668,
+            "forestry": 26897423284,
+            "agriculture": 41423450514,
+            "minerals": 33934172804,
+            "energy": 157141260626,
+            "manufacturing": 90836754663
+          }
+        },
+        "2023": {
+          "exports": 354407979759,
+          "imports": 418010321977,
+          "total_trade": 772418301736,
+          "balance": -63602342218,
+          "exports_by_industry": {
+            "other": 95653420516,
+            "manufacturing": 163846233639,
+            "forestry": 10579390574,
+            "agriculture": 33101811808,
+            "minerals": 21230352294,
+            "energy": 29996770928
+          },
+          "imports_by_industry": {
+            "other": 90355483332,
+            "forestry": 20152519615,
+            "minerals": 30830042596,
+            "energy": 122638642560,
+            "agriculture": 43502202172,
+            "manufacturing": 110531431702
+          }
+        },
+        "2024": {
+          "exports": 349908153123,
+          "imports": 411886683368,
+          "total_trade": 761794836491,
+          "balance": -61978530245,
+          "exports_by_industry": {
+            "agriculture": 34994138430,
+            "forestry": 10735662353,
+            "other": 94675131295,
+            "minerals": 20151278310,
+            "manufacturing": 161254560228,
+            "energy": 28097382507
+          },
+          "imports_by_industry": {
+            "agriculture": 44738217469,
+            "other": 86054031502,
+            "manufacturing": 106074223501,
+            "minerals": 29959309146,
+            "forestry": 20552473379,
+            "energy": 124508428371
+          }
+        },
+        "2025": {
+          "exports": 304289120525,
+          "imports": 351186075105,
+          "total_trade": 655475195630,
+          "balance": -46896954580,
+          "exports_by_industry": {
+            "other": 87868434609,
+            "manufacturing": 135651441465,
+            "minerals": 16717628135,
+            "energy": 24743161200,
+            "agriculture": 30415342448,
+            "forestry": 8893112668
+          },
+          "imports_by_industry": {
+            "agriculture": 39930698646,
+            "other": 78224519646,
+            "minerals": 22215007220,
+            "energy": 102200911329,
+            "manufacturing": 91378237433,
+            "forestry": 17236700831
+          }
+        }
+      }
+    },
+    "MX": {
+      "name": "Mexico",
+      "group": "usmca",
+      "years": {
+        "2017": {
+          "exports": 243608974625,
+          "imports": 312666740496,
+          "total_trade": 556275715121,
+          "balance": -69057765871,
+          "exports_by_industry": {
+            "other": 58034128028,
+            "agriculture": 18426205994,
+            "minerals": 17376778029,
+            "energy": 26783889902,
+            "forestry": 6037729600,
+            "manufacturing": 116950243072
+          },
+          "imports_by_industry": {
+            "minerals": 8230754862,
+            "other": 50641149526,
+            "forestry": 1647629618,
+            "manufacturing": 214196900596,
+            "agriculture": 26599174623,
+            "energy": 11351131271
+          }
+        },
+        "2018": {
+          "exports": 265968016784,
+          "imports": 343680540510,
+          "total_trade": 609648557294,
+          "balance": -77712523726,
+          "exports_by_industry": {
+            "other": 62913915425,
+            "manufacturing": 124129026898,
+            "minerals": 18695481974,
+            "agriculture": 18935804891,
+            "energy": 35000289760,
+            "forestry": 6293497836
+          },
+          "imports_by_industry": {
+            "agriculture": 28209342735,
+            "other": 52533709066,
+            "manufacturing": 235862370782,
+            "minerals": 9706305830,
+            "forestry": 1802331956,
+            "energy": 15566480141
+          }
+        },
+        "2019": {
+          "exports": 256676487323,
+          "imports": 356093584045,
+          "total_trade": 612770071368,
+          "balance": -99417096722,
+          "exports_by_industry": {
+            "other": 58613126040,
+            "manufacturing": 120995239218,
+            "minerals": 17326914214,
+            "agriculture": 19167538210,
+            "energy": 34628474404,
+            "forestry": 5945195237
+          },
+          "imports_by_industry": {
+            "agriculture": 30962755984,
+            "manufacturing": 248090036731,
+            "minerals": 9520451502,
+            "other": 52561251969,
+            "forestry": 1811572241,
+            "energy": 13147515618
+          }
+        },
+        "2020": {
+          "exports": 212512806763,
+          "imports": 323476917991,
+          "total_trade": 535989724754,
+          "balance": -110964111228,
+          "exports_by_industry": {
+            "agriculture": 18237961640,
+            "other": 50845749405,
+            "minerals": 14474504013,
+            "energy": 23292889857,
+            "forestry": 5306690492,
+            "manufacturing": 100355011356
+          },
+          "imports_by_industry": {
+            "other": 49717334846,
+            "manufacturing": 219231192494,
+            "minerals": 9014428053,
+            "forestry": 2048224599,
+            "energy": 9898986441,
+            "agriculture": 33566751558
+          }
+        },
+        "2021": {
+          "exports": 277194626233,
+          "imports": 382569339250,
+          "total_trade": 659763965483,
+          "balance": -105374713017,
+          "exports_by_industry": {
+            "other": 67009329546,
+            "manufacturing": 115547977407,
+            "agriculture": 24995419751,
+            "minerals": 20314049707,
+            "energy": 42416504466,
+            "forestry": 6911345356
+          },
+          "imports_by_industry": {
+            "other": 58974448431,
+            "forestry": 2313188464,
+            "agriculture": 38691601704,
+            "minerals": 14369039641,
+            "energy": 15912903913,
+            "manufacturing": 252308157097
+          }
+        },
+        "2022": {
+          "exports": 327016123443,
+          "imports": 452014966511,
+          "total_trade": 779031089954,
+          "balance": -124998843068,
+          "exports_by_industry": {
+            "agriculture": 27865105106,
+            "other": 76330522467,
+            "minerals": 23261094164,
+            "forestry": 7405007124,
+            "manufacturing": 133400115506,
+            "energy": 58754279076
+          },
+          "imports_by_industry": {
+            "other": 66422109295,
+            "forestry": 2722797060,
+            "agriculture": 44052314764,
+            "minerals": 17467834060,
+            "energy": 26047432426,
+            "manufacturing": 295302478906
+          }
+        },
+        "2023": {
+          "exports": 323637150335,
+          "imports": 472907368135,
+          "total_trade": 796544518470,
+          "balance": -149270217800,
+          "exports_by_industry": {
+            "other": 75706002630,
+            "manufacturing": 142081274107,
+            "forestry": 6967363061,
+            "agriculture": 28219560694,
+            "minerals": 24753876130,
+            "energy": 45909073713
+          },
+          "imports_by_industry": {
+            "other": 67068783943,
+            "forestry": 2764719313,
+            "minerals": 14408723850,
+            "energy": 24156792749,
+            "agriculture": 45999895770,
+            "manufacturing": 318508452510
+          }
+        },
+        "2024": {
+          "exports": 334031930350,
+          "imports": 505523174525,
+          "total_trade": 839555104875,
+          "balance": -171491244175,
+          "exports_by_industry": {
+            "agriculture": 30277285108,
+            "forestry": 6886275392,
+            "other": 74219137345,
+            "minerals": 25349019178,
+            "manufacturing": 156147110806,
+            "energy": 41153102521
+          },
+          "imports_by_industry": {
+            "agriculture": 49185689388,
+            "other": 69282244026,
+            "manufacturing": 354242942842,
+            "minerals": 13609113214,
+            "forestry": 2903774823,
+            "energy": 16299410232
+          }
+        },
+        "2025": {
+          "exports": 309799032506,
+          "imports": 492513213776,
+          "total_trade": 802312246282,
+          "balance": -182714181270,
+          "exports_by_industry": {
+            "other": 64902950151,
+            "manufacturing": 154356416714,
+            "minerals": 22252773171,
+            "energy": 34406607707,
+            "agriculture": 27961459851,
+            "forestry": 5918824912
+          },
+          "imports_by_industry": {
+            "agriculture": 41058700985,
+            "other": 66607945658,
+            "minerals": 10751363611,
+            "energy": 11009140125,
+            "manufacturing": 360463979247,
+            "forestry": 2622084150
+          }
+        }
+      }
+    },
+    "JP": {
+      "name": "Japan",
+      "group": "control",
+      "years": {
+        "2017": {
+          "exports": 67603374931,
+          "imports": 136411341570,
+          "total_trade": 204014716501,
+          "balance": -68807966639,
+          "exports_by_industry": {
+            "other": 18541392224,
+            "agriculture": 12779415478,
+            "minerals": 1474898245,
+            "energy": 5525059504,
+            "forestry": 1908403320,
+            "manufacturing": 27374206160
+          },
+          "imports_by_industry": {
+            "minerals": 3497242197,
+            "other": 21591211553,
+            "forestry": 441709996,
+            "manufacturing": 109416386357,
+            "agriculture": 908359975,
+            "energy": 556431492
+          }
+        },
+        "2018": {
+          "exports": 75163791885,
+          "imports": 142228284560,
+          "total_trade": 217392076445,
+          "balance": -67064492675,
+          "exports_by_industry": {
+            "other": 19561013559,
+            "manufacturing": 28876645667,
+            "minerals": 1891903924,
+            "agriculture": 13775189511,
+            "energy": 9054105464,
+            "forestry": 2004933760
+          },
+          "imports_by_industry": {
+            "agriculture": 969227520,
+            "other": 23976852072,
+            "manufacturing": 112438017502,
+            "minerals": 3589485313,
+            "forestry": 426311159,
+            "energy": 828390994
+          }
+        },
+        "2019": {
+          "exports": 74479657382,
+          "imports": 143590954959,
+          "total_trade": 218070612341,
+          "balance": -69111297577,
+          "exports_by_industry": {
+            "other": 19541194728,
+            "manufacturing": 29426520052,
+            "minerals": 2006542042,
+            "agriculture": 12489064346,
+            "energy": 9245620260,
+            "forestry": 1770715954
+          },
+          "imports_by_industry": {
+            "agriculture": 1075215888,
+            "manufacturing": 111005386667,
+            "minerals": 3445681617,
+            "other": 26464691164,
+            "forestry": 372566723,
+            "energy": 1227412900
+          }
+        },
+        "2020": {
+          "exports": 64030307995,
+          "imports": 119506500170,
+          "total_trade": 183536808165,
+          "balance": -55476192175,
+          "exports_by_industry": {
+            "agriculture": 12070035636,
+            "other": 17344673800,
+            "minerals": 1676384123,
+            "energy": 7093106504,
+            "forestry": 1639393305,
+            "manufacturing": 24206714627
+          },
+          "imports_by_industry": {
+            "other": 23785551695,
+            "manufacturing": 91486111961,
+            "minerals": 2503657737,
+            "forestry": 286471434,
+            "energy": 423660249,
+            "agriculture": 1021047094
+          }
+        },
+        "2021": {
+          "exports": 74729967807,
+          "imports": 134799632703,
+          "total_trade": 209529600510,
+          "balance": -60069664896,
+          "exports_by_industry": {
+            "other": 21288581359,
+            "manufacturing": 23719520310,
+            "agriculture": 14557116883,
+            "minerals": 1775708681,
+            "energy": 11580883447,
+            "forestry": 1808157127
+          },
+          "imports_by_industry": {
+            "other": 27313202147,
+            "forestry": 339538692,
+            "agriculture": 1381373610,
+            "minerals": 3216232909,
+            "energy": 606783234,
+            "manufacturing": 101942502111
+          }
+        },
+        "2022": {
+          "exports": 80151186168,
+          "imports": 148002056619,
+          "total_trade": 228153242787,
+          "balance": -67850870451,
+          "exports_by_industry": {
+            "agriculture": 14959386378,
+            "other": 24448364416,
+            "minerals": 2010571362,
+            "forestry": 2184955089,
+            "manufacturing": 23431419321,
+            "energy": 13116489602
+          },
+          "imports_by_industry": {
+            "other": 31224159164,
+            "forestry": 349566329,
+            "agriculture": 1564265999,
+            "minerals": 3899000708,
+            "energy": 1229765219,
+            "manufacturing": 109735299200
+          }
+        },
+        "2023": {
+          "exports": 75794402717,
+          "imports": 147206391795,
+          "total_trade": 223000794512,
+          "balance": -71411989078,
+          "exports_by_industry": {
+            "other": 23179663682,
+            "manufacturing": 24849648705,
+            "forestry": 1803390280,
+            "agriculture": 12252481743,
+            "minerals": 1690582080,
+            "energy": 12018636227
+          },
+          "imports_by_industry": {
+            "other": 28971110338,
+            "forestry": 272138220,
+            "minerals": 3744649321,
+            "energy": 698167359,
+            "agriculture": 1429766214,
+            "manufacturing": 112090560343
+          }
+        },
+        "2024": {
+          "exports": 78978400465,
+          "imports": 148370517793,
+          "total_trade": 227348918258,
+          "balance": -69392117328,
+          "exports_by_industry": {
+            "agriculture": 12164511008,
+            "forestry": 1545836197,
+            "other": 24643109509,
+            "minerals": 1653378299,
+            "manufacturing": 27057805045,
+            "energy": 11913760407
+          },
+          "imports_by_industry": {
+            "agriculture": 1529989839,
+            "other": 29283048938,
+            "manufacturing": 113233041383,
+            "minerals": 3551581950,
+            "forestry": 274685214,
+            "energy": 498170469
+          }
+        },
+        "2025": {
+          "exports": 75737107841,
+          "imports": 133771857345,
+          "total_trade": 209508965186,
+          "balance": -58034749504,
+          "exports_by_industry": {
+            "other": 22155721653,
+            "minerals": 2208677180,
+            "manufacturing": 26174546530,
+            "energy": 11584400979,
+            "agriculture": 12205297706,
+            "forestry": 1408463793
+          },
+          "imports_by_industry": {
+            "agriculture": 1609547584,
+            "other": 28104439690,
+            "minerals": 3097948014,
+            "energy": 452948552,
+            "manufacturing": 100206036175,
+            "forestry": 300937330
+          }
+        }
+      }
+    },
+    "KR": {
+      "name": "South Korea",
+      "group": "control",
+      "years": {
+        "2017": {
+          "exports": 48356286523,
+          "imports": 71416537956,
+          "total_trade": 119772824479,
+          "balance": -23060251433,
+          "exports_by_industry": {
+            "other": 10691414930,
+            "agriculture": 6893815349,
+            "minerals": 1784922470,
+            "energy": 4059484375,
+            "forestry": 780972604,
+            "manufacturing": 24145676795
+          },
+          "imports_by_industry": {
+            "minerals": 4201304686,
+            "other": 13167775942,
+            "forestry": 536910840,
+            "manufacturing": 49812954446,
+            "agriculture": 831034998,
+            "energy": 2866557044
+          }
+        },
+        "2018": {
+          "exports": 56318293632,
+          "imports": 0,
+          "total_trade": 56318293632,
+          "balance": 56318293632,
+          "exports_by_industry": {
+            "other": 12125957457,
+            "manufacturing": 22722590951,
+            "minerals": 2270805295,
+            "agriculture": 8516321639,
+            "energy": 9844820794,
+            "forestry": 837797496
+          },
+          "imports_by_industry": {}
+        },
+        "2019": {
+          "exports": 56504331987,
+          "imports": 77476288590,
+          "total_trade": 133980620577,
+          "balance": -20971956603,
+          "exports_by_industry": {
+            "other": 11830250605,
+            "manufacturing": 20623319351,
+            "minerals": 2354742148,
+            "agriculture": 7917929714,
+            "energy": 13068380282,
+            "forestry": 709709887
+          },
+          "imports_by_industry": {
+            "agriculture": 948293190,
+            "manufacturing": 52121843875,
+            "minerals": 4200708080,
+            "other": 15216963182,
+            "forestry": 741106554,
+            "energy": 4247373709
+          }
+        },
+        "2020": {
+          "exports": 50978204887,
+          "imports": 76010953517,
+          "total_trade": 126989158404,
+          "balance": -25032748630,
+          "exports_by_industry": {
+            "agriculture": 7800894541,
+            "other": 11129524928,
+            "minerals": 1954368255,
+            "energy": 8602231049,
+            "forestry": 651969890,
+            "manufacturing": 20839216224
+          },
+          "imports_by_industry": {
+            "other": 15197911523,
+            "manufacturing": 53546665177,
+            "minerals": 3102043746,
+            "forestry": 572312901,
+            "energy": 2404626986,
+            "agriculture": 1187393184
+          }
+        },
+        "2021": {
+          "exports": 65807092743,
+          "imports": 95103091392,
+          "total_trade": 160910184135,
+          "balance": -29295998649,
+          "exports_by_industry": {
+            "other": 13145597796,
+            "manufacturing": 24054115245,
+            "agriculture": 9345342391,
+            "minerals": 2327652312,
+            "energy": 16186524348,
+            "forestry": 747860651
+          },
+          "imports_by_industry": {
+            "other": 18765191725,
+            "forestry": 564758265,
+            "agriculture": 1290662307,
+            "minerals": 5034771045,
+            "energy": 3847223470,
+            "manufacturing": 65600484580
+          }
+        },
+        "2022": {
+          "exports": 72034270447,
+          "imports": 115296815663,
+          "total_trade": 187331086110,
+          "balance": -43262545216,
+          "exports_by_industry": {
+            "agriculture": 9579632349,
+            "other": 14061835308,
+            "minerals": 2404239908,
+            "forestry": 745508529,
+            "manufacturing": 24837618723,
+            "energy": 20405435630
+          },
+          "imports_by_industry": {
+            "other": 23265579844,
+            "forestry": 841741188,
+            "agriculture": 1396431873,
+            "energy": 5382441245,
+            "manufacturing": 76769683514,
+            "minerals": 7640937999
+          }
+        },
+        "2023": {
+          "exports": 64966071886,
+          "imports": 116314635021,
+          "total_trade": 181280706907,
+          "balance": -51348563135,
+          "exports_by_industry": {
+            "other": 12991822670,
+            "manufacturing": 24073393596,
+            "forestry": 570988217,
+            "agriculture": 7726990090,
+            "minerals": 2057115257,
+            "energy": 17545762056
+          },
+          "imports_by_industry": {
+            "other": 23406620793,
+            "forestry": 674500234,
+            "minerals": 6326262321,
+            "energy": 4691150353,
+            "agriculture": 1498893717,
+            "manufacturing": 79717207603
+          }
+        },
+        "2024": {
+          "exports": 65586297175,
+          "imports": 131553159443,
+          "total_trade": 197139456618,
+          "balance": -65966862268,
+          "exports_by_industry": {
+            "agriculture": 8636987640,
+            "forestry": 554485807,
+            "other": 12676722582,
+            "minerals": 2080464636,
+            "manufacturing": 22969386289,
+            "energy": 18668250221
+          },
+          "imports_by_industry": {
+            "agriculture": 1869606535,
+            "other": 24193937236,
+            "manufacturing": 93222978645,
+            "minerals": 6602984587,
+            "forestry": 782684194,
+            "energy": 4880968246
+          }
+        },
+        "2025": {
+          "exports": 62911760240,
+          "imports": 113384812016,
+          "total_trade": 176296572256,
+          "balance": -50473051776,
+          "exports_by_industry": {
+            "other": 11713406480,
+            "manufacturing": 23065902039,
+            "minerals": 2691033212,
+            "energy": 15867578448,
+            "agriculture": 9114773126,
+            "forestry": 459066935
+          },
+          "imports_by_industry": {
+            "agriculture": 1904822453,
+            "minerals": 5699380106,
+            "energy": 4668399187,
+            "other": 22292242252,
+            "manufacturing": 78136146028,
+            "forestry": 683821990
+          }
+        }
+      }
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "group": "control",
+      "years": {
+        "2017": {
+          "exports": 56262427929,
+          "imports": 53279057647,
+          "total_trade": 109541485576,
+          "balance": 2983370282,
+          "exports_by_industry": {
+            "other": 23074946029,
+            "agriculture": 1903460666,
+            "minerals": 1229219215,
+            "energy": 3534759545,
+            "forestry": 1697132966,
+            "manufacturing": 24822909508
+          },
+          "imports_by_industry": {
+            "minerals": 1395278479,
+            "other": 20781014371,
+            "forestry": 667180472,
+            "manufacturing": 24681754443,
+            "agriculture": 2771386324,
+            "energy": 2982443558
+          }
+        },
+        "2018": {
+          "exports": 66503855791,
+          "imports": 60740348403,
+          "total_trade": 127244204194,
+          "balance": 5763507388,
+          "exports_by_industry": {
+            "other": 26343231927,
+            "manufacturing": 28521998996,
+            "minerals": 1249358820,
+            "agriculture": 2075663302,
+            "energy": 6523840968,
+            "forestry": 1789761778
+          },
+          "imports_by_industry": {
+            "agriculture": 2859306083,
+            "other": 22920743342,
+            "manufacturing": 28504831581,
+            "minerals": 1442119359,
+            "forestry": 733483699,
+            "energy": 4279864339
+          }
+        },
+        "2019": {
+          "exports": 69079944687,
+          "imports": 63272043613,
+          "total_trade": 132351988300,
+          "balance": 5807901074,
+          "exports_by_industry": {
+            "other": 30514692331,
+            "manufacturing": 26233274535,
+            "minerals": 1270725464,
+            "agriculture": 1807071725,
+            "energy": 7397927389,
+            "forestry": 1856253243
+          },
+          "imports_by_industry": {
+            "agriculture": 2936875393,
+            "manufacturing": 30648362331,
+            "minerals": 1418402858,
+            "other": 23595432918,
+            "forestry": 717012489,
+            "energy": 3955957624
+          }
+        },
+        "2020": {
+          "exports": 58532524177,
+          "imports": 50279812747,
+          "total_trade": 108812336924,
+          "balance": 8252711430,
+          "exports_by_industry": {
+            "agriculture": 1726165837,
+            "minerals": 972511350,
+            "other": 28308251309,
+            "energy": 5902325112,
+            "forestry": 1698440858,
+            "manufacturing": 19924829711
+          },
+          "imports_by_industry": {
+            "other": 21966070364,
+            "manufacturing": 22844606148,
+            "minerals": 1115681651,
+            "forestry": 579711944,
+            "energy": 1576565462,
+            "agriculture": 2197177178
+          }
+        },
+        "2021": {
+          "exports": 61667136420,
+          "imports": 56263871559,
+          "total_trade": 117931007979,
+          "balance": 5403264861,
+          "exports_by_industry": {
+            "other": 29521253594,
+            "manufacturing": 19245173017,
+            "agriculture": 1789367354,
+            "minerals": 1068766299,
+            "energy": 8468147062,
+            "forestry": 1574429094
+          },
+          "imports_by_industry": {
+            "other": 23289760808,
+            "forestry": 670664984,
+            "agriculture": 2292446090,
+            "minerals": 1472587078,
+            "energy": 3236054697,
+            "manufacturing": 25302357902
+          }
+        },
+        "2022": {
+          "exports": 76804955876,
+          "imports": 63923727455,
+          "total_trade": 140728683331,
+          "balance": 12881228421,
+          "exports_by_industry": {
+            "agriculture": 1791585154,
+            "other": 29598029431,
+            "minerals": 1322539255,
+            "forestry": 1770129735,
+            "manufacturing": 22421074745,
+            "energy": 19901597556
+          },
+          "imports_by_industry": {
+            "other": 26140934871,
+            "forestry": 859717974,
+            "agriculture": 2738328722,
+            "minerals": 1838538962,
+            "energy": 4925748421,
+            "manufacturing": 27420458505
+          }
+        },
+        "2023": {
+          "exports": 75024224494,
+          "imports": 64172360364,
+          "total_trade": 139196584858,
+          "balance": 10851864130,
+          "exports_by_industry": {
+            "other": 30639118919,
+            "manufacturing": 24586588343,
+            "forestry": 1869602508,
+            "agriculture": 1954133329,
+            "minerals": 1600092891,
+            "energy": 14374688504
+          },
+          "imports_by_industry": {
+            "other": 24667348848,
+            "forestry": 736937516,
+            "minerals": 1697619846,
+            "energy": 3314361975,
+            "agriculture": 2922352272,
+            "manufacturing": 30833739907
+          }
+        },
+        "2024": {
+          "exports": 79532064951,
+          "imports": 68167511080,
+          "total_trade": 147699576031,
+          "balance": 11364553871,
+          "exports_by_industry": {
+            "agriculture": 2178933619,
+            "forestry": 2186413454,
+            "other": 32476353395,
+            "minerals": 1701382125,
+            "manufacturing": 26787685692,
+            "energy": 14201296666
+          },
+          "imports_by_industry": {
+            "agriculture": 3084182325,
+            "other": 25013680773,
+            "manufacturing": 34370383381,
+            "minerals": 1713387990,
+            "forestry": 736073277,
+            "energy": 3249803334
+          }
+        },
+        "2025": {
+          "exports": 88054930398,
+          "imports": 59201566339,
+          "total_trade": 147256496737,
+          "balance": 28853364059,
+          "exports_by_industry": {
+            "other": 45299861608,
+            "manufacturing": 27297885227,
+            "minerals": 1577369077,
+            "energy": 9712977114,
+            "agriculture": 2034480205,
+            "forestry": 2132357167
+          },
+          "imports_by_industry": {
+            "agriculture": 2380435865,
+            "minerals": 1497784832,
+            "other": 24583700710,
+            "energy": 2832459641,
+            "manufacturing": 27270896394,
+            "forestry": 636288897
+          }
+        }
+      }
+    },
+    "DE": {
+      "name": "Germany",
+      "group": "control",
+      "years": {
+        "2017": {
+          "exports": 53965424642,
+          "imports": 117539152399,
+          "total_trade": 171504577041,
+          "balance": -63573727757,
+          "exports_by_industry": {
+            "other": 16533308537,
+            "agriculture": 2037585046,
+            "minerals": 1172946817,
+            "energy": 763251298,
+            "forestry": 628572048,
+            "manufacturing": 32829760896
+          },
+          "imports_by_industry": {
+            "minerals": 4239951043,
+            "other": 36803118567,
+            "forestry": 1409725580,
+            "manufacturing": 72639798070,
+            "agriculture": 2196850201,
+            "energy": 249708938
+          }
+        },
+        "2018": {
+          "exports": 57757642813,
+          "imports": 0,
+          "total_trade": 57757642813,
+          "balance": 57757642813,
+          "exports_by_industry": {
+            "other": 18190254872,
+            "manufacturing": 35186961160,
+            "minerals": 1300986558,
+            "agriculture": 1918082231,
+            "energy": 511274594,
+            "forestry": 650083398
+          },
+          "imports_by_industry": {}
+        },
+        "2019": {
+          "exports": 60403911977,
+          "imports": 127454861626,
+          "total_trade": 187858773603,
+          "balance": -67050949649,
+          "exports_by_industry": {
+            "other": 18630517610,
+            "manufacturing": 37189701927,
+            "minerals": 1222150364,
+            "agriculture": 1968804121,
+            "energy": 755581390,
+            "forestry": 637156565
+          },
+          "imports_by_industry": {
+            "agriculture": 2148335591,
+            "manufacturing": 73875877311,
+            "minerals": 4611661891,
+            "other": 44982770812,
+            "forestry": 1516313450,
+            "energy": 319902571
+          }
+        },
+        "2020": {
+          "exports": 58001636678,
+          "imports": 114896827026,
+          "total_trade": 172898463704,
+          "balance": -56895190348,
+          "exports_by_industry": {
+            "agriculture": 1973504713,
+            "other": 20089973556,
+            "energy": 1668807626,
+            "minerals": 1064721905,
+            "forestry": 535651700,
+            "manufacturing": 32668977178
+          },
+          "imports_by_industry": {
+            "other": 45814815467,
+            "manufacturing": 61878819080,
+            "minerals": 3430435672,
+            "forestry": 1638952416,
+            "energy": 186320787,
+            "agriculture": 1947483604
+          }
+        },
+        "2021": {
+          "exports": 65362648698,
+          "imports": 134652573833,
+          "total_trade": 200015222531,
+          "balance": -69289925135,
+          "exports_by_industry": {
+            "other": 22873403522,
+            "manufacturing": 35977196763,
+            "minerals": 1269910997,
+            "agriculture": 2383412074,
+            "energy": 2134185986,
+            "forestry": 724539356
+          },
+          "imports_by_industry": {
+            "other": 53564115335,
+            "forestry": 2209940040,
+            "agriculture": 2332266262,
+            "minerals": 4256452562,
+            "energy": 328301654,
+            "manufacturing": 71961497980
+          }
+        },
+        "2022": {
+          "exports": 72871724143,
+          "imports": 146607811985,
+          "total_trade": 219479536128,
+          "balance": -73736087842,
+          "exports_by_industry": {
+            "agriculture": 2735818878,
+            "other": 24971225594,
+            "minerals": 1303871597,
+            "forestry": 818900521,
+            "manufacturing": 38176653533,
+            "energy": 4865254020
+          },
+          "imports_by_industry": {
+            "other": 52364786054,
+            "forestry": 2667997349,
+            "agriculture": 2662268931,
+            "minerals": 5440449956,
+            "energy": 607686081,
+            "manufacturing": 82864623614
+          }
+        },
+        "2023": {
+          "exports": 76679468119,
+          "imports": 159186218324,
+          "total_trade": 235865686443,
+          "balance": -82506750205,
+          "exports_by_industry": {
+            "other": 24245718929,
+            "manufacturing": 41705556466,
+            "forestry": 684530811,
+            "agriculture": 2851398231,
+            "minerals": 1427257405,
+            "energy": 5765006277
+          },
+          "imports_by_industry": {
+            "other": 52801772828,
+            "forestry": 1930933059,
+            "minerals": 5607984873,
+            "energy": 399302555,
+            "agriculture": 2532157573,
+            "manufacturing": 95914067436
+          }
+        },
+        "2024": {
+          "exports": 75724045723,
+          "imports": 160380001936,
+          "total_trade": 236104047659,
+          "balance": -84655956213,
+          "exports_by_industry": {
+            "agriculture": 2434442091,
+            "forestry": 648527224,
+            "other": 25194193381,
+            "minerals": 1421294795,
+            "manufacturing": 39376383335,
+            "energy": 6649204897
+          },
+          "imports_by_industry": {
+            "agriculture": 2695553056,
+            "other": 50780123798,
+            "manufacturing": 98848455317,
+            "minerals": 5705771140,
+            "forestry": 1847378223,
+            "energy": 502720402
+          }
+        },
+        "2025": {
+          "exports": 75877961111,
+          "imports": 140830526030,
+          "total_trade": 216708487141,
+          "balance": -64952564919,
+          "exports_by_industry": {
+            "other": 26904522745,
+            "manufacturing": 38471711105,
+            "minerals": 1592064215,
+            "energy": 6236380826,
+            "agriculture": 2128537183,
+            "forestry": 544745037
+          },
+          "imports_by_industry": {
+            "manufacturing": 78265336013,
+            "other": 53258011252,
+            "minerals": 4914897004,
+            "forestry": 1729678931,
+            "agriculture": 2282119765,
+            "energy": 380483065
+          }
+        }
+      }
+    }
+  }
+}

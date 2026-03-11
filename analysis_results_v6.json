@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "model_version": "6.0",
+    "analysis_date": "2026-02",
+    "pre_period": "2017-2019",
+    "post_period": "2021-2025",
+    "excluded_year": 2020
+  },
+  "layer1_national_did": {
+    "description": "Does USMCA increase US exports to member countries relative to non-members?",
+    "model": "ln(X_{p,t}) = β(USMCA_p × Post_t) + FE_p + FE_t + ε",
+    "treatment": [
+      "CA",
+      "MX"
+    ],
+    "control": [
+      "JP",
+      "KR",
+      "UK",
+      "DE"
+    ],
+    "result": {
+      "coefficient_pct": -0.12,
+      "std_error": 0.0539,
+      "t_statistic": -0.023,
+      "p_value": 0.9828,
+      "ci_95_pct": [
+        -13.06,
+        14.74
+      ],
+      "n_observations": 48,
+      "r_squared": 0.9948,
+      "degrees_of_freedom": 5,
+      "significant_5pct": false,
+      "significant_10pct": false
+    },
+    "descriptive_stats": {
+      "usmca": {
+        "pre_avg_B": 273.6,
+        "post_avg_B": 324.9,
+        "growth_pct": 18.8
+      },
+      "control": {
+        "pre_avg_B": 61.9,
+        "post_avg_B": 73.2,
+        "growth_pct": 18.3
+      },
+      "simple_did_pct": 0.5
+    }
+  },
+  "layer2_state_ddd": {
+    "description": "Do PNWER states benefit more from USMCA than other states?",
+    "model": "ln(X_{s,p,t}) = θ(PNWER×USMCA×Post) + two-way interactions + FE_s + FE_p + FE_t + ε",
+    "interpretation": "θ measures whether PNWER states' exports to USMCA partners (relative to non-USMCA partners) grew more than non-PNWER states after USMCA implementation",
+    "result": {
+      "coefficient_pct": 58.81,
+      "std_error": 0.2024,
+      "t_statistic": 2.286,
+      "p_value": 0.0314,
+      "ci_95_pct": [
+        4.59,
+        141.14
+      ],
+      "n_observations": 1200,
+      "r_squared": 0.0378,
+      "degrees_of_freedom": 24,
+      "significant_5pct": true,
+      "significant_10pct": true
+    },
+    "descriptive_stats": {
+      "pnwer": {
+        "usmca_growth_pct": 37.7,
+        "control_growth_pct": -16.7,
+        "within_did_pct": 54.4
+      },
+      "non_pnwer": {
+        "usmca_growth_pct": 18.0,
+        "control_growth_pct": 22.1,
+        "within_did_pct": -4.1
+      },
+      "simple_ddd_pct": 58.5
+    }
+  }
+}
